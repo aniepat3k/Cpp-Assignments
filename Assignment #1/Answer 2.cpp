@@ -1,21 +1,26 @@
-#include <iostream>
+/*
+Name: Ufford, Aniefiok Patrick
+Department: Computer Science
+Reg. No: 45368006HH
 
+Assignment #1 answer 2
+*/
+
+#include<iostream>
 using namespace std;
 
-
-int main ()
+int main()
 {
-	int number1, number2;
- 	cout << "\n  Enter two integers" << endl;
- 	cin >> number1 >> number2;
- 
- 	if( number1 % number2 == 0 ){
-    cout << "\n  " << number1 << " is a multiple of " << number2 << endl;	// display if it is a multiple
-    }
-    else {
-    cout << "\n  " << number1 << " is not a multiple of " << number2 << endl;	// display if it is not a multiple
-    }
-    
-return 0;
+	int num1,num2;
+	
+	cout<<"WELCOME TO THIS PROGRAM, PLEASE INPUT YOUR NUMBERS:";
+	cin>>num1 >>num2;
+	
+	if(num1 % num2==0)
+	cout<<num1<<"correct, is a multiple of"<<num2<<endl;
+	
+	if(num1 %num2!=0)
+	cout<<num1<<" wrong,is not a multiple of"<<num2<<endl;
+	
+	return 0;
 }
-

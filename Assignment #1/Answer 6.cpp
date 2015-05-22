@@ -1,39 +1,54 @@
+/*
+Name: Ufford, Aniefiok Patrick
+Department: Computer Science
+Reg. No: 45368006HH
+
+Assignment #1 answer 6
+*/
+
 #include <iostream>
-
 using namespace std;
-
 
 int main()
 {
-double feet;
-double inches;
-double height;
-double weight;
-double bmi;
-
-cout << "\n  ENTER HEIGHT" << endl;
-
-cout << "Feet:" << endl;
-cin >> feet;
-
-cout << "Inches:" << endl;
-cin >> inches;
-
-cout << "\n  ENTER WEIGHT" << endl;
-cout << "Pounds:" << endl;
-cin >> weight;
-
-height = (feet * 12) + inches;
-bmi= (weight*703) / (height * height);
-
-cout << "\nBMI VALUES\n";
-cout << "- Underweight: less than 18.5\n";
-cout << "- Normal: between 18.5 and 24.9\n";
-cout << "- Overweight: between 25 and 29.9\n";
-cout << "- Obese: 30 and greater\n";
-cout << "\n\n";
-cout << "\tYour BMI: " << bmi << endl;
+    // Variable declaration
+    double weightInKilograms;
+    double heightInmetres;
+    double BMI;
+    
+    // display welcome messages to user
+    cout << "Welcome - This Body Mass Index (BMI) calculator application that reads\n";
+    cout << "the user’s weight in kilograms and height in meters,\n";
+    cout << "calculates and display the user’s body mass index\n\n";
+    
+    // TODO: display information from the Department of Health and Human Services
 
 
-return 0;
+
+    
+    // TODO: read in values
+    cout << "Enter weight (in kg): ";
+    cin>>weightInKilograms;
+    cout << "Enter height (in meters): ";
+    
+     cin>>heightInmetres;
+    
+    // TODO: calculate BMI
+    (cin,BMI=weightInKilograms/(heightInmetres*heightInmetres));
+    
+    // display result
+    cout<<BMI;
+if (BMI<18.5) {
+cout<<"\tYou are Underweight";}
+if (BMI>=18.5 and BMI<=24.9) {
+cout<<"\tYou are Normal";}
+if (BMI>=25 and BMI<=29.9) {
+cout<<"\tYou are overweight";}
+if (BMI>=30) {
+cout<<"\tYou are obese";}
+    
+    cout << "\nThanks and Goodbye";
+    
+    //system("PAUSE");
+    return EXIT_SUCCESS;
 }
