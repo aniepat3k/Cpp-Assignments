@@ -4,7 +4,7 @@
  * interface without revealing implementations of HealthProfile's member
  * functions, which are defined in HealthProfile.cpp
  *
- * Assignment #2
+ * Assignment 2
  *
  * Name:        UFFORD, ANIEFIOK PATRICK
  * Reg. No:   	45368006HH
